@@ -55,7 +55,7 @@ _Go the GitHub repository and clone your application files from repository._
 git clone https://github.com/iam-avinash-jagtap/2-Tier-Application.git
 cd 2-Tier-Application/
 ```
-You are in your application diretory 
+Now You are in your Application Diretory 
  ---
 # Step 4:- Write Dockerfile for you application 
 1. Write a Dockerfile to Build the Image of Your Application.
@@ -93,7 +93,9 @@ docker build -t flaskapp .
 ```bash
 docker images
 ```
-[Docker-images]()
+
+![Images](https://github.com/iam-avinash-jagtap/2-Tier-Application-Deployment-Using-Docker_Contianer/blob/master/Images/Images.png)
+
 # Step 5:- Write Docker-compose file 
 1. To run both containers simultaneously, define the services in a docker-compose.yml file.
 ```bash
@@ -147,6 +149,7 @@ networks:
   twotier:
 ```
 2. Start the containers using Docker Compose:
+   
 _Use the following command to build and start all services defined in your docker-compose.yml file:_
 ```bash
 docker-compose up -d 
@@ -156,8 +159,11 @@ docker-compose up -d
 ```bash
 docker ps
 ```
-[Running-contianer]()
+
+![Running-Contianers](https://github.com/iam-avinash-jagtap/2-Tier-Application-Deployment-Using-Docker_Contianer/blob/master/Images/Running%20Contianers.png)
+
 # Step 6:- Test Your Application 
+
 _Your setup is now ready for testing._
 1. Open your cloud console.
 2. Copy the Public IP of your EC2 instance.
@@ -166,11 +172,13 @@ _Your setup is now ready for testing._
    
         http://x.x.x.x:5000
     
-[Op]()
+![Output](https://github.com/iam-avinash-jagtap/2-Tier-Application-Deployment-Using-Docker_Contianer/blob/master/Images/Output.png)
+
 5. Enter any message in the input box and submit it.
 6. Go back to your terminal and access the MySQL container. 
 7. Check the database to confirm your message has been stored successfully.
-[DB]()
+
+![MYSQL-Contianer](https://github.com/iam-avinash-jagtap/2-Tier-Application-Deployment-Using-Docker_Contianer/blob/master/Images/MYSQL-contianer.png)
 
 # Summary 
 This project demonstrates the deployment of a 2-tier web application using Flask and MySQL, fully containerized with Docker and orchestrated using Docker Compose. It offers hands-on experience in building and running multi-container applications, configuring environment variables, managing persistent storage, and setting up container networking. This project is ideal for understanding modern DevOps practices and serves as a strong foundation for deploying real-world applications using containerization technologies.
